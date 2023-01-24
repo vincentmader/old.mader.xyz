@@ -6,7 +6,7 @@ services:
       context: ./python_flask_server
     restart: always
     environment:
-      VIRTUAL_HOST: old.mader.lo
+      VIRTUAL_HOST: old.mader.xyz
       LETSENCRYPT_HOST: old.mader.xyz
       LETSENCRYPT_EMAIL: vincent.mader@icloud.com
     ports:
