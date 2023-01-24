@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+  my-server:
+    build:
+      context: ./python_flask_server
+    restart: always
+    environment:
+      VIRTUAL_HOST: old.mader.lo
+      LETSENCRYPT_HOST: old.mader.xyz
+      LETSENCRYPT_EMAIL: vincent.mader@icloud.com
+    ports:
+      - 5001:5555
+    networks:
+      - reverse-proxy
+networks:
+  reverse-proxy:
+    external: true
+    name: proxy_my_awesome_proxy_network # same name as in `./proxy/docker-compose.yml` + prefix (see "docker network ls")
