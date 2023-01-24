@@ -1,0 +1,23 @@
+flask
+pymongo
+numpy
+
+# bokeh
+# Pillow
+# colour
+# gspread
+# matplotlib
+# scipy
+# oauth2client
+# tqdm
+# pygame
+# pyPDF2
+# 
+# autopep8
+# pylint
+# jedi
+# neovim
+# jupyter
+# 
+# pdfreader
+# yfinance

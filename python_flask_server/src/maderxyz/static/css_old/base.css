@@ -1,0 +1,119 @@
+.body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center center; /1* optional, center the image */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif; /* ? */
+  /* text-align: center; */
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+#content {
+  width: 40%;
+  margin-right: auto; /* center */
+  margin-left: auto; /* center */
+  padding-top: 30px;
+}
+@media only screen and (max-width: 1200px) {
+  .body {
+    /* padding-top: 40px; */
+  }
+  #content {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 641px) {
+  .body {
+    /* padding-top: 20px; */
+  }
+  #content {
+    width: 80%;
+  }
+}
+
+.section {
+  padding: 5%;
+  background-color: rgba(48, 48, 48, 0.7);
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section_title {
+  margin: 0px;
+  text-align: center;
+}
+
+/* h1.main_title { */
+/*   /1* font-family: Tahoma; *1/ */
+/*   text-align: center; */
+/*   /1* color: rgba(64, 64, 64, 0.7); *1/ */
+/*   color: green; */
+/*   /1* color: white; *1/ */
+/*   /1* background-color: blue; *1/ */
+/*   /1* /2* font: "80px Arial, sans-serif"; *2/ *1/ */
+/*   /1*   /\* border: "1px solid black"; *\/ *1/ */
+/* } */
+
+a.stealthy_link {
+  /* color: white; */
+  text-decoration: none;
+  width: 80%;
+  height: 80%;
+  /* font-family: "Arial"; */
+}
+
+button.stealthy_button {
+  /* color: white; */
+  text-decoration: none;
+  /* width: 80%; */
+  /* height: 80%; */
+  /* font-family: "Arial"; */
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#home_div {
+  width: 100%;
+  /* height: 500px; */
+  /* padding-top: 30px; */
+  /* margin-left: 30px; */
+  /* padding: 50px; */
+  /* margin-top: 80px; */
+  /* border: 1px solid red; */
+  font-size: 24px;
+  height: 2em;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0.15em;
+}
+
+#home_link {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  padding-right: 0.7em;
+  padding-top: 0.2em;
+  width: 100%;
+}
+
+.divider {
+  background-color: #111111;
+  height: 2px;
+  widows: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.latex {
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.canvas {
+  width: 100%;
+}
