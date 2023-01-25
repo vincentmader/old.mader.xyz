@@ -131,31 +131,31 @@ INDEX_NAVGRID_SECTIONS = [{
             # 'id': 'quad_tree',
             # 'title': 'quad tree',
             # 'link': '/comp_phys/various/quadtree'
-        # }, {
+            # }, {
             'id': 'diffusion',
             'title': 'diffusion (work in progress)',
             'link': '/comp_phys/fluid_dynamics/diffusion'
-        # }, {
+            # }, {
             # 'id': 'forest_fire',
             # 'title': 'forest fire',
             # 'link': '/comp_phys/cellular_automata/forest_fire'
-        # }, {
+            # }, {
             # 'id': 'nbody_cloud',
             # 'title': 'work in progress',
             # 'link': '/comp_phys/n_body/cloud'
-        # }, {
+            # }, {
             # 'id': 'incompressible_fluid',
             # 'title': 'incompressible fluid',
             # 'link': '/comp_phys/fluid_dynamics/incompressible_fluid'
-        # }, {
+            # }, {
             # 'id': 'tatooine',
             # 'title': 'Tatooine',
             # 'link': '/old/tatooine'
-        # }, {
+            # }, {
             # 'id': 'react',
             # 'title': 'React frontend',
             # 'link': '/react'
-        # }, {
+            # }, {
             # 'id': 'draw',
             # 'title': 'draw on canvas',
             # 'link': '/various/draw'
@@ -167,20 +167,20 @@ INDEX_NAVGRID_SECTIONS = [{
         # {'id': 'spotify'},
         # {'id': 'boltzmann', 'link': '/comp_phys/boltzmann'},
     ]
-}, {
-    'title': 'chronos',
-    'pages': [
-        {
-            'id': 'correlation_finder',
-            'link': '/chronos/stats/correlation_finder'
-        }, {
-            'id': 'stats',
-            'link': '/chronos/stats/stats'
-        }, {
-            'id': 'test',
-            'link': '/chronos/stats/test'
-        }
-    ]
+    # }, {
+    # 'title': 'chronos',
+    # 'pages': [
+    #     {
+    #         'id': 'correlation_finder',
+    #         'link': '/chronos/stats/correlation_finder'
+    #     }, {
+    #         'id': 'stats',
+    #         'link': '/chronos/stats/stats'
+    #     }, {
+    #         'id': 'test',
+    #         'link': '/chronos/stats/test'
+    #     }
+    # ]
     # }, {
     #     'title': 'unfinished',
     #     'pages': [
