@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cd ./src/ && python3 ./run_server.py
+cd ./src/ && python3 ./main.py
