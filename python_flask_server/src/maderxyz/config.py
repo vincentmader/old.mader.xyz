@@ -86,10 +86,6 @@ INDEX_NAVGRID_SECTIONS = [{
     'title': 'electro-magnetism',
     'pages': [
         {
-            'id': 'lorentz',
-            'title': 'Wien filter',
-            'link': '/old/lorentz'
-        }, {
             'id': 'charge_interaction',
             'title': 'charge interaction (unstable)',
             'link': '/comp_phys/electro_magnetism/charge_interaction'
@@ -119,6 +115,10 @@ INDEX_NAVGRID_SECTIONS = [{
             'id': 'mc_pi_darts',
             'title': 'Monte Carlo pi',
             'link': '/comp_phys/monte_carlo/pi_darts'
+        }, {
+            'id': 'lorentz',
+            'title': 'Wien filter',
+            'link': '/comp_phys/various/lorentz'
         }, {
             'id': 'rock_paper_scissors',
             'title': 'rock-paper-scissors',

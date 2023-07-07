@@ -134,6 +134,10 @@ def comp_phys_various(subdir):
         template = "comp_phys/various/quadtree.html"
         props = {}
         return render_template(template, props=props)
+    elif subdir == "lorentz":
+        template = "comp_phys/various/lorentz.html"
+        props = {}
+        return render_template(template, props=props)
 
 
 @app.route("/various/draw")

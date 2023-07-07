@@ -1,0 +1,22 @@
+{% extends "base/page_design_1.html" %}
+
+{% block head %}
+
+{{ super() }}
+
+{% endblock %}
+{% block content %}
+
+<div class="section_title">
+    Wien filter
+</div>
+
+<!-- <div class="section"> -->
+<div class="canvas_holder">
+    <canvas id="canvas"></canvas>
+</div>
+<!-- </div> -->
+
+<script type="module" src="{{ url_for('static', filename='js/comp_phys/various/lorentz.js') }}"></script>
+
+{% endblock %}

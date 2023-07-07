@@ -212,48 +212,48 @@ canvas.height = W;
 // const velocities = [1.6, 1.1, 0.9, 0.8, 0.7, 0.6];
 // Objects
 function Circle(x, y, radius, color) {
-  this.x = canvas.width / 2;
-  this.y = canvas.height;
-  this.radius = 1;
-  this.vx = 0;
-  // this.vy = -velocities[randomIntFromRange(0, velocities.length)];
-  this.vy = -6 + 0.5 * (Math.random() - 0.5);
-  this.draw = function () {
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-    ctx.fillStyle = this.color;
-    ctx.fill();
-    ctx.closePath();
-  };
-  this.color = "white";
-  if (Math.abs(-this.vy - 6) <= 0.001) {
-    this.color = "green";
-  }
-  if (-this.vy > 6.001) {
-    this.color = "red";
-  }
-  if (-this.vy < 5.999) {
-    this.color = "blue";
-  }
-  this.update = function () {
-    this.draw();
-    this.vx += ((q * (E + this.vy * B)) / m) * dt;
-    this.x += this.vx * dt; // Move x coordinate
-    this.y += this.vy * dt; // Move y coordinate
-  };
+    this.x = canvas.width / 2;
+    this.y = canvas.height;
+    this.radius = 2;
+    this.vx = 0;
+    // this.vy = -velocities[randomIntFromRange(0, velocities.length)];
+    this.vy = -6 + 0.5 * (Math.random() - 0.5);
+    this.draw = function () {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.closePath();
+    };
+    this.color = "white";
+    if (Math.abs(-this.vy - 6) <= 0.001) {
+        this.color = "green";
+    }
+    if (-this.vy > 6.001) {
+        this.color = "red";
+    }
+    if (-this.vy < 5.999) {
+        this.color = "blue";
+    }
+    this.update = function () {
+        this.draw();
+        this.vx += ((q * (E + this.vy * B)) / m) * dt;
+        this.x += this.vx * dt; // Move x coordinate
+        this.y += this.vy * dt; // Move y coordinate
+    };
 }
 
 let circles = [];
 function animate() {
-  requestAnimationFrame(animate); // Create an animation loop
-  ctx.clearRect(0, 0, canvas.width, canvas.height); // Erase whole canvas
+    requestAnimationFrame(animate); // Create an animation loop
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Erase whole canvas
 
-  for (let idx = 0; idx < 30; idx++) {
-    circles.push(new Circle());
-  }
-  circles.forEach((circle) => {
-    circle.update();
-  });
+    for (let idx = 0; idx < 30; idx++) {
+        circles.push(new Circle());
+    }
+    circles.forEach((circle) => {
+        circle.update();
+    });
 }
 
 animate();
