@@ -10,7 +10,7 @@ services:
       LETSENCRYPT_HOST: mader.xyz, v1.mader.xyz
       LETSENCRYPT_EMAIL: vincent.mader@icloud.com
     ports:
-      - 5000:5000
+      - 5001:5001
     networks:
       - reverse-proxy
 
